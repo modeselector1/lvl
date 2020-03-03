@@ -1,5 +1,14 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+const rename = require('gulp-rename');
+const minifyCSS = require('gulp-minify-css');
+
+function minicss () {
+  return gulp.src('src/css/*.css')
+      .pipe(minifyCSS())
+      .pipe(rename('style.min.css'))
+      .pipe(gulp.dest('dist/css'))
+}
 
 function watch () {
   browserSync.init({
@@ -12,3 +21,4 @@ function watch () {
 }
 
 exports.watch = watch;
+exports.minicss = minicss;
