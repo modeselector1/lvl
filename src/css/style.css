@@ -332,6 +332,11 @@ template {
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0px; }
 
@@ -355,6 +360,28 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.hero {
+  position: relative;
+  padding-top: 110px;
+  background: #131313 url("../img/main_image.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #fff; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 80px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+
+.title {
+  margin: 0; }
 
 body {
   font-family: 'Futura Book', sans-serif;
