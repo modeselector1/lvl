@@ -394,7 +394,11 @@ body {
   color: #E3B873;
   text-transform: uppercase;
   font-family: 'Futura Demi', sans-serif;
-  font-weight: 500px; }
+  font-weight: 500px;
+  text-decoration: none;
+  transition: color 0.7s; }
+  .logo:hover {
+    color: #fff; }
 
 .nav__item {
   color: #fff;
@@ -451,19 +455,21 @@ body {
     max-width: 80px;
     height: 100%; }
   .hero__scroll-down {
-    position: absolute;
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.64rem;
+    min-height: 6.92rem;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 0.85rem;
     color: #fff;
-    transition: color 0.2s; }
+    transition: color 0.2s;
+    font-family: 'Yeseva One', cursive; }
     .hero__scroll-down:hover {
       color: #E3B873; }
     .hero__scroll-down::after {
@@ -500,7 +506,8 @@ body {
       height: 2px;
       background-color: #E3B873;
       margin-left: 8px;
-      border-radius: 2px; }
+      border-radius: 2px;
+      margin-left: 13px; }
 
 .title {
   margin: 0;
