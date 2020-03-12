@@ -1,5 +1,6 @@
 .modal
   opacity: 0
+  visibility: hidden
   display: flex
   align-items: center
   justify-content: center
@@ -14,8 +15,7 @@
   background-color: rgba($dark, 0.6)
   &--visible
     opacity: 1
-    visability: hidden
-
+    visibility: visible
   &__dialog
     position: relative
     background: $dark url("../img/bg-lines.svg") no-repeat center
