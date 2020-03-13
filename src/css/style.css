@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
@@ -605,7 +606,8 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+  font-weight: normal; }
 
 .card__list {
   padding: 0 0 0 1rem;
@@ -681,6 +683,16 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
+
+.text {
+  font-size: 2px;
+  font-size: 20px;
+  font-family: 'Futura Demi', sans-serif;
+  text-transform: none;
+  padding-bottom: тщту; }
+
+.section-title__image {
+  margin-bottom: 1.714rem; }
 
 @media screen and (max-width: 1250px) {
   html {
