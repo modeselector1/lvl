@@ -1,8 +1,9 @@
 .hero
   position: relative
   display: flex
-  flex-direction: columns
+  flex-direction: column
   justify-content: center
+  lign-items: flex-start
   padding-top: 110px
   background: $dark url("../img/main_image.jpg") no-repeat center / cover
   height: 100vh
@@ -15,6 +16,15 @@
     width: 100%
     height: 100%
     background-color: rgba($dark, 0.7)
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 3.46rem
+    background-color: $dark
   &__content
     max-width: 47.85rem
     position: relative
@@ -37,6 +47,7 @@
     max-width: 80px
     height: 100%
   &__scroll-down
+    z-index: 3
     display: flex
     position: absolute
     align-items: center
