@@ -803,7 +803,9 @@ img {
     margin-bottom: 1.85rem; }
   .project {
     background-color: #131313;
-    color: #fff; } }
+    color: #fff; }
+  .card__title--text {
+    color: #131313; } }
 
 @media screen and (max-height: 650px) {
   .hero__scroll-down {
