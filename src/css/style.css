@@ -623,13 +623,19 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.overviev-title__heading {
+  font-size: 28px;
+  color: #E3B873;
+  font-family: 'Yeseva One', cursive; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    line-height: 20px; }
   .swiper-slide__heding {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -659,6 +665,10 @@ img {
 
 .swiper-button-next {
   background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -799,7 +809,7 @@ img {
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
+    width: 26.5rem;
     margin-bottom: 1.85rem; }
   .project {
     background-color: #131313;

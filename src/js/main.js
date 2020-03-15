@@ -41,6 +41,7 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width () )
+  next.css('left', prev.width () + 55 + bullets.width() +20 )
+  bullets.css('left', prev.width () + 35)
 
 });
