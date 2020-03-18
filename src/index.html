@@ -161,13 +161,13 @@
               <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="img/slider/image_1_.jpg" alt="1">
+                    <img src="img/slider/image_1_.jpg" class="swiper-slide-img" alt="1">
                   </div>
                   <div class="swiper-slide">
-                    <img src="img/slider/image_2.jpg" alt="2">
+                    <img src="img/slider/image_2.jpg" class="swiper-slide-img" alt="2">
                   </div>
                   <div class="swiper-slide">
-                    <img src="img/slider/image_3.jpg" alt="3">
+                    <img src="img/slider/image_3.jpg" class="swiper-slide-img" alt="3">
                   </div>
               <!-- If we need scrollbar -->
               <div class="swiper-scrollbar"></div>
@@ -182,7 +182,7 @@
     <!-- /.section section--dark overview -->
       <section class="section control">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title control__section-title control__section-title--light">
             <h2 class="section-title__heading">Онлайн контроль</h2>
             <!-- section title heading -->
             <div class="section-title__image">
@@ -191,6 +191,34 @@
           <!-- section title img -->
           </div>
         <!-- secton-title -->
+        <div class="control__video video">
+          <img src="img/play_icon.svg" alt="video" class="video__play">
+        </div>
+        <!-- /.control__video video -->
+        <p class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+        </p>
+        <form action="#" class="form control__form">
+          <div class="control__input-group">
+            <label for="user-name" class="label form__label control__label">Имя</label>
+            <input type="text" class="input form__input control__input  input--lite"  id="user-name" placeholder="Как вас зовут:">
+          </div>
+          <!-- name -->
+         <div class="control__input-group">
+          <label for="user-phone" class="label form__label control__label">Телефон</label>
+          <input type="tel" class="input form__input control__input input--lite" id="user-phone"  placeholder="Ваш номер телефона:">
+         </div>
+          <!-- tel -->
+          <button class="button button--primary control__button">Отправить</button>
+          <!-- email -->
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" class="policy__checkbox"  id="policy-checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__policy-label">я соглашаюсь с обработкой данных</label>
+          </div>
+          <!-- /.policy -->
+        </form>
+        <!-- /.form modal__form -->
+        <!-- /.control__text -->
         </div>
       <!-- container -->
       </section>
