@@ -893,6 +893,11 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    min-height: 465px;
+    max-width: 925px;
+    margin: auto;
+    margin-bottom: 4rem; }
 
 .project {
   padding-bottom: 30rem; }
