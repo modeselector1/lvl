@@ -1,67 +1,660 @@
-@media screen and ( max-width: 1250px )
-  html
-    font-size: 12px
-    .nav
-      &__item
-        margin-right: 1rem
-@media screen and ( max-width: 991px )  
-  .nav
-    display: none
+@media screen and ( max-height: 660px )
   .hero
-    &__instagram
+    &__scroll-down
       display: none
-    &__content
-      margin-left: 0    
-@media screen and ( max-width: 760px )  
-  .row
-    flex-direction: column
-    align-items: center
-  .types  
-    &__card
-      margin-bottom: 5rem
-  .card
-    &__text
-      margin-left: 0         
-@media screen and ( max-width: 570px )  
+    
+@media screen and ( max-width: 1375px )
+  .nav
+    &__item
+      margin-right: 2rem
+      &:first-child
+        margin-left: 0rem
   .contacts
     &__phone
-      margin-right: 0
+      margin-right: 2rem
+  .projects
+    padding: 128px 0px 400px 0px
+    &__swiper-container
+      &--text
+        margin-top: -260px
+      &--image
+        max-width: 570px
+  .clients
+    &__row
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      margin-top: 45px
+    &__card
+      margin: 0px 50px
+      margin-bottom: 100px
+      &:last-of-type
+        margin-bottom: 0px
+  .checkout
+    &__bg-image
+      background-position: -40px -1px, -9px -56px
+    &__steps
+      font-size: 15px
+      &--1
+        max-width: 21rem
+        left: 285px
+        top: 58px
+      &--2
+        left: 359px
+        top: 179px
+      &--3
+        left: 384px
+        top: 344px
+      &--4
+        max-width: 17rem
+        left: 318px
+        top: 493px
+    &__form-box
+      min-width: 31.142rem
+  .decor
+    &__section-title
+      max-width: 27rem
+    &__heading
+      font-size: 1.7rem
+
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+  .hero
+    &__scroll-down
+      &:hover
+        &::before
+          width: 87px
+  .nav
+    &__item
+      margin-right: 1.5rem
+  .contacts
+    &__phone
+      margin-right: 1.5rem
+
+  .projects
+    &__heading
+      font-size: 22px
+      line-height: 138.6%
+    &__section-title
+      max-width: 25rem
+    &__swiper-container
+      max-width: 28rem
+      &--text
+        margin-top: -200px
+      &--image
+        max-width: 510px
+    &__swiper-text
+      width: 37%
+  .checkout
+    &__bg-image
+      min-height: 700px
+      background-position: -200px -1px, -9px -56px
+    &__steps
+      font-size: 15px
+      &--1
+        max-width: 24rem
+        left: 135px
+        top: 58px
+      &--2
+        left: 206px
+        top: 179px
+      &--3
+        left: 230px
+        top: 344px
+      &--4
+        max-width: 18rem
+        left: 169px
+        top: 493px
+    &__form-box
+      min-height: 450px
+      min-width: 31.142rem
+    & div.invalid
+      position: absolute
+      margin-top: 39px
+  .steps
+    & .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+      margin: 0px 4px
+    & .swiper-button-next
+      margin-left: -49px
+  .decor
+    margin-top: 100px
+
+@media screen and ( max-width: 991px )
+  .logo
+    &:hover
+      color: $primary
+  .nav
+    &__item
+      &:hover
+        color: $light
+  .contacts
+    &__phone
+      &:hover
+        color: $primary
+  .instagram
+    &__link
+      &:hover
+        color: $primary
+        &::after
+          background-color: $primary
+  .button
+    &--primary
+      &:hover
+        background-color: rgba($primary, 1)
+        border: 0.07rem solid $primary
+        box-shadow: 0rem 0.35rem 1.07rem rgba($primary, 0.3)
+    &--outline
+      &:hover
+        background-color: transparent
+        box-shadow: none
+  .button-go-up
+    opacity: 1
+  .hero
+    &__scroll-down
+      &:hover
+        &::before
+          width: 0px
+  .control
+    &__form-button
+      &:hover
+        color: $light
+        border: 0.07rem solid $primary
+        box-shadow: none
+        background-color: $primary
+  .video
+    &__play-button
+      &:hover
+        box-shadow: none
+  .footer
+    &__adress-text a
+      &:hover
+        color: $primary
+    &__icon a
+      &:hover
+        background-color: $primary
+        border: 2px solid $primary
+
+  .nav
+    &__item
+     display: none 
+  .row
+    display: block
+    max-width: 392px
+    width: 98%
+    margin: 0 auto 
+  .card
+    margin-bottom: 0rem
+  .page-subtitle
+    max-width: 550px
+  .projects
+    padding: 0px 0px 410px 0px
+    &__row
+      max-width: 80%
+      margin: 0 auto
+    &__section-title
+      text-align: center
+      min-width: 100%
+      align-items: center
+    &__description
+      max-width: 80%
+      margin-bottom: 36px
+    &__title-word
+      justify-content: center
+      &::after
+        display: none
+    &__swiper-slider
+      display: block
+    &__swiper-text
+      width: 50%
+      margin: 0
+    &__swiper-container
+      &--image
+        min-width: 100%
+      &--text
+        max-width: 100%
+        align-self: start
+        margin: 0
+
+  .control
+    &__form
+      display: flex
+      flex-direction: column
+      max-width: 400px
+    &__email-form
+      margin: 0
+      margin-top: 50px
+      margin-bottom: 50px
+    &__form-button
+      order: 6
+      margin: 0 auto
+      margin-top: 20px
+      max-width: 210px
+    &__input
+      color: $dark
+    &__policy
+      margin-top: 0px
+
+  .team
+    &__wrap
+      margin-top: 100px
+    &__heading
+      color: $dark
+    &__subtitle
+      color: $dark
+    &__row
+      flex-direction: column
+      align-items: center
+    &__card
+      margin-top: 40px
+      &--first
+        margin-top: 0px
+    &__people-title
+      font-size: 18px
+    &__people-subtitle
+      font-size: 18px
+    &__people-xp-box
+      font-size: 13px
+  .checkout
+    display: none
+  .steps
+    display: none
+  .decor
+    &__row
+      display: none
+    &__slider
+      display: block
+      
+  .team
+    &__col
+      margin: 33px 0px 0px 0px
+      &:first-of-type
+        margin-top: 0px
+      &:last-of-type
+        margin-bottom: 50px
+
+@media screen and ( max-width: 768px )
+  .hero
+    &__content
+      padding-left: 0px
+      margin-left: 0rem
+    &__instagram
+      display: none
+    &__scroll-down
+      display: none
+  .go-up
+    display: none
+
+  .decor
+    &__slider
+      width: 90%
+    &__swiper-button-prev
+      width: 40px
+      height: 40px
+    &__swiper-button-next
+      width: 40px
+      height: 40px
+@media screen and ( max-width: 576px )
+  .hero
+    &__text
+      max-width: 27.7rem
+    &__button
+      display: block
+      width: 100%
+      &--primary
+        margin-bottom: 2.4rem
+        margin-bottom: 1.85rem
+  .contacts
+    &__phone
       color: $light
-      text-decoration: none
+      margin-right: 0rem
+      &:hover
+        color: $light
+      &::after
+        display: none
     &__button
       display: none
-  .title  
-    font-size: 1.64rem 
-  .hero
-    &__scroll-down
+  .projects
+    text-align: left
+    padding: 0px 0px 70px 0px
+    &__row
+      max-width: 100%
+    &__section-title
+      align-items: start
+      text-align: left
+    &__title-word
+      justify-content: start
+    &__description
+      font-size: 14px
+      margin-top: 25px
+      margin-bottom: 39px
+    &__swiper-slide
+      margin-bottom: 38px
+    &__swiper-container
+      &--image
+        max-height: 100%
+  .projects-background
+    background: $dark
+  .control-type-checkout-decor-design-background
+    background: $light
+    padding-top: 0px
+  .control
+    background-color: $dark
+    color: $light
+    margin-top: 0px
+    padding-top: 30px
+    padding-bottom: 0px
+    &__form
+      margin-top: 25px
+    &__email-form
+      margin-top: 59px
+      margin-bottom: 25px
+      font-size: 16px
+    &__label
+      color: $light
+      font-size: 16px
+    &__input
+      color: $light
+      padding-top: 2px
+      font-size: 18px
+      border-bottom: 1px solid rgba($light, 0.7)
+      &::placeholder
+        color: $light
+    &__input-email
+      padding-bottom: 5px
+    &__policy
+      margin: 0
+      margin-left: -13px
+      padding-right: 0px
+    &__form-button
+      padding-top: 17px
+      padding-bottom: 16px
+      margin-bottom: -26px 
+      margin-top: 62px
+      min-width: 100%
+  .steps
+    display: none
+  .types
+    padding-bottom: 250px
+  .decor
+    padding-top: 1px
+    background: $dark
+    margin-top: 0px
+    margin-bottom: -1px
+    &::before
       display: none
+    &__slider
+      margin-top: -255px
+      padding-top: 0
+      padding-bottom: 0
+    &__section-title
+      max-width: 95
+  .design
+    padding-top: 1px
+    background: $dark
+    &__title-heading
+      color: $light
+    &__subtitle
+      color: $light
+  .team-and-clients
+    padding: 0px 0px 210px 0px
+    margin-bottom: -1px
+    background-color: $dark
+    background-image: none
+  .team
+    padding-top: 60px
+    & .page-subtitle
+      max-width: 100%
+    &__heading
+      color: $light
+    &__wrap
+      margin-top: 0px
+    &__section
+      color: $light
+    &__subtitle
+      color: $light
+    &__about-text
+      color: $light
+    &__about
+      display: none
+    &__col
+      &:first-of-type
+        margin-top: 5px
+      &:last-of-type
+        margin-bottom: 0px
+    &__people-info
+      max-width: 80%
+  .clients
+    display: none
+  .footer
     &__content
-      max-width: 22.86rem
-    &__text
-      font-size: 1.29rem
-      margin-bottom: 2.28rem
-    &__button  
-      display: block
-      width: 26.5rem
-      margin-bottom: 1.85rem
-  .project
-    background-color: $dark   
-    color: $light     
-  .card__title
-    &--text
-      color: $dark   
-  .section
-    &-title__text
-      text-align: center   
-  .swiper-slide
-    &-img
-       
-@media screen and ( max-height: 650px )      
-  .hero
-    &__scroll-down
+      background: $dark
+    &__wrap
+      background: $dark
+    &__adress-and-map
+      margin-top: 0px
+    &__policy
+      margin-left: 0px
+    &__adress
+      margin-bottom: 55px
+      order: 5
+    &__adress-text
+      font-size: 18px
+    &__menu
       display: none
+    &__icon
+      margin-bottom: -20px
+    &__icon a
+      width: 40px
+      height: 40px
+    &__email
+      background-size: 60%
+    &__instagram
+      background-size: 55%
+
+  #map-yandex 
+    width: 1000px
+    max-width: 100%
+    max-height: 300px
+
+@media screen and ( max-width: 500px )
+  .container
+    width: 90%
+  .title
+    margin-top: 3px
+    font-size: 23px
+    line-height: 132.83%
+    max-width: 27.14rem
+  .subtitle
+    margin-top: 10px
+    font-size: 18px
+    margin-bottom: 33px
+  .hero
+    &__text
+      max-width: 26.5rem
   .section
-    &-title__text
-      text-align: center   
+    &-title
+      &__heading
+        font-size: 22px
+        &--white
+          color: $light
+          font-size: 22px
+  .page-subtitle
+    &__text
+      &--white
+        color: $light
+  .row
+    display: block
+    max-width: 392px
+    width: 100%
+  .card
+    margin-bottom: -5.4rem
+    &__text
+      margin: 0
+      bottom: 11.55rem
+      max-width: 22.5rem
+    &__price-tag
+      text-align: center
+      bottom: -1.25rem
+      padding: 0.8rem 1rem
+      min-width: 15.7rem
+    &__list
+      margin: 0 0 2.8rem 0rem
+  .page-subtitle
+    max-width: 308px
+    margin-bottom: 38px
+    &__text
+      font-size: 1.25rem
+      line-height: 137%
+      font-style: normal
+      font-weight: normal
+  .design
+    background-color: $dark
+  .swiper-text
+    &__heading
+      font-size: 14px
+    &__description
+      font-size: 14px
+  .projects
+    &__description
+      margin-top: 22px
+      margin-bottom: 39px
+      line-height: 170.84%
+    &__swiper-slide
+      margin-bottom: 38px
+    &__swiper-container
+      &--image
+        max-height: 100%
+    &__nav
+      margin-bottom: 2px
+  .control
+    padding-bottom: 0px
+    &__video
+      margin-top: 40px
+      min-height: 207px
+      background-size: cover
+    &__description
+      font-size: 14px
+      line-height: 172.5%
+      max-width: 100%
+      &::before
+        margin-top: 29px
+        margin-bottom: 15px
+  .types
+    padding-bottom: 205px
+    &__section
+        margin: 6.9rem 0rem 3.25rem 0rem
 
+  .decor
+    &__section-title
+      max-width: 100%
+      // font-size: 22px
+    &__slider-heading
+      font-size: 22px
+      line-height: 138.6%
+      margin-bottom: 32px
+    &__slider
+      margin-top: -213px
+      width: 100%
+  .policy
+    &__label
+      &::before
+        margin-top: 2px
+        margin-left: -1px
+        width: 1.5rem
+        height: 1.5rem
+  .footer
+    &__group
+      flex-basis: 100%
+      margin-top: 3.3rem
+    &__title-form
+      font-size: 20px
+      margin-bottom: 1.1rem
+      line-height: 138.6%
+    &__group
+      &-phone
+        margin-top: 3.8rem
+      &-question
+        margin-top: 3.9rem
+    &__label
+      font-size: 15px
+    &__input
+      font-size: 18px
+    &__policy
+      margin-top: 0.45rem
+    &__policy-label
+      margin-left: 1px
+      font-size: 16px
+      justify-content: start
+    &__button
+      margin-top: 5.56rem
+      min-width: 100%
+      padding: 1rem 4.2rem 1rem
 
+@media screen and ( max-width: 376px )
+  .hero
+    padding-bottom: 80px
+    & button
+      &:last-of-type
+        margin-top: 26px
+  .projects
+    &__description
+      max-width: 305px
+      margin-top: 25px
+      margin-bottom: 41px
+      line-height: 163.84%
+    &__swiper-slide
+      margin-bottom: 25px
+    &__swiper-text
+      margin-right: -9px
+      padding-bottom: 32px
+      padding-right: 10px 
+    &__swiper-container
+      &--image
+        margin-top: -2px
+        margin-bottom: 32px
+        max-height: 202px
+  .swiper-text
+    &__heading
+      margin-bottom: 9px
+  .control
+    &__description
+      min-width: 101%
+  .video
+    &__play-button
+      width: 37px
+      height: 37px
+      left: calc( 50% - 18.5px )
+      top: calc( 50% - 18.5px )
+  .types
+    & .card__text
+      bottom: 11.40rem
+  .team
+    padding-bottom: 60px
+    &__row
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+    &__col
+      padding-left: 35px
+    & img
+      max-width: 304px
+  .footer
+    &__wrap
+      padding-bottom: 0
+    &__group-phone 
+      margin-top: 63px
+    &__group-question
+      margin-top: 63px
+    &__adress-text
+      line-height: 26px
+    &__icon a
+      margin: 20px 8px 0px
+  .ymap-container 
+    margin-top: 45px
+    margin-bottom: 38px
+  #map-yandex 
+    max-width: 340px
+    width: 100%
+    max-height: 255px

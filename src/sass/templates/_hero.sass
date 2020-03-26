@@ -3,11 +3,21 @@
   display: flex
   flex-direction: column
   justify-content: center
-  lign-items: flex-start
-  padding-top: 110px
-  background: $dark url("../img/main_image.jpg") no-repeat center / cover
+  align-items: flex-start
+  padding-top: 83px
+  background: $dark url(../img/hero_bg.jpg) no-repeat center / cover
   height: 100vh
   color: $light
+  &::after
+    content: ''
+    position: absolute
+    margin-bottom: -1px
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 3.46rem
+    background-color: $dark
   &::before
     content: ''
     position: absolute
@@ -15,98 +25,114 @@
     left: 0
     width: 100%
     height: 100%
-    background-color: rgba($dark, 0.7)
-  &::after
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 0
-    right: 0
-    width: 100%
-    height: 3.46rem
-    background-color: $dark
+    background: rgba($dark, 0.7)
   &__content
-    max-width: 47.85rem
+    padding-left: 70px
     position: relative
-    margin-left: 4.28rem
-  &__title  
-    margin-bottom: 0.1rem
-  &__text
-    font-size: 1.57rem
-    max-width: 500px
-    line-height: 131%
-    margin: 0
-    margin-bottom: 3.3rem
-  &__button  
-    margin-right: 20px
-    padding: 18px 25px
+    max-width: 47.85rem
   &__instagram
     position: absolute
     left: 0
     top: 0
-    max-width: 80px
+    max-width: 5.85rem
     height: 100%
-  &__scroll-down
-    z-index: 3
+    font-family: 'FuturaDemiC', sans-serif
+  &__container-scroll-down
     display: flex
     position: absolute
-    align-items: center
+    z-index: 3
     justify-content: center
     left: 0
     bottom: 0
-    min-width: 17.6rem
-    min-height: 6.92rem
-    background-color: $dark  
+    background-color: $dark
+  &__scroll-down
+    padding: 1.643rem 3.429rem 2.929rem 3.429rem
+    color: $light
+    font-family: 'Yeseva One', cursive
+    font-size: 0.85rem
+    line-height: 138.6%
     text-transform: uppercase
     text-decoration: none
-    font-size: 0.85rem
-    color: $light
-    transition: color 0.2s
-    font-family: 'Yeseva One', cursive
-    &:hover
-      color: $primary
+    &::before
+      content: ''
+      display: flex
+      position: absolute
+      bottom: 0
+      margin-bottom: 2.786rem
+      background-color: $primary
+      width: 0px
+      height: 1px
+      transition: width 0.7s
     &::after
       content: ''
-      width: 30px
-      height: 30px
+      display: inline-block
+      width: 29px
+      height: 29px
       border: 2px solid $primary
+      transform: translateY(10px)
       border-radius: 50%
-      margin-left: 12px
       background: url(../img/arrow-down.svg) no-repeat center
+      margin-left: 19px
+    &:hover
+      &::before
+        content: ''
+        display: flex
+        position: absolute
+        bottom: 0
+        margin-bottom: 2.786rem
+        background-color: $primary
+        width: 102px
+        height: 1px
+  &__text
+    max-width: 36rem
+    font-size: 1.57rem
+    line-height: 2.15rem
+  &__button  
+    &--primary
+      padding: 18px 25px
+      margin-right: 15px
+    &--outline
+      padding: 18px 43px
 
 .instagram
   display: flex
   justify-content: center
   align-items: center
-  background-color: $dark 
-  font-family: 'Futura Demi', sans-serif
+  background-color: $dark
   &__link
     display: flex
     align-items: center
     text-transform: uppercase
+    text-decoration: none
     color: $primary
-    text-decoration: none  
     transform: rotate(90deg)
     line-height: 0.8
     transition: color 0.2s
     &:hover
       color: $light
       &::after
-        background-color: $light 
+        background-color: $light
     &::after
       content: ''
-      width: 50px
+      position: absolute
+      right: 0
+      top: 0
+      width: 51px
       height: 2px
+      border-radius: 2px
       background-color: $primary
-      margin-left: 8px 
-      border-radius: 2px 
-      margin-left: 13px 
+      margin-right: -60px
+      margin-top: 5px
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
-  font-size: 2.857rem
-  line-height: 1.3
+  font-size: 2.85rem
+  font-style: normal
   font-weight: normal
+  line-height: 3.78rem
   &--primary
     color: $primary
+.subtitle
+  margin-top: 15px
+  margin-bottom: 45px

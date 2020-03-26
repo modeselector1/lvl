@@ -1,52 +1,195 @@
 .footer
-  background: $dark url('../img/footer-bg.jpg')  no-repeat  center / cover
+  background-color: $dark
+  &__content
+    position: relative
+    background: $dark url('../img/footer_bg.png') no-repeat center / 100%
+    background-size: cover
+    padding-top: 1px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba($dark, 0.8)
   &__wrap
-    background-color: $black   
-    max-width: 63.07rem
-    margin: auto
-    padding: 2.5rem
-    margin-top: -20rem
-    margin-bottom: 3.714rem
-    padding-top: 3rem
-  &__title
-    text-transform: uppercase
+    position: relative
+    margin: 0 auto
+    margin-top: -225px 
+    padding-top: 2.3rem 
+    padding-bottom: 2.457rem 
+    max-width: 63.071rem
+    background: $dark url('../img/footer_modal_bg.svg')
+
+  &__title-form
+    margin: 0
+    margin-bottom: 3.1rem
+    padding: 0
     font-family: 'Yeseva One', cursive
     font-style: normal
     font-weight: normal
     font-size: 1.428rem
+    line-height: 28px
     text-align: center
-    margin-top: 0
-    
+    text-transform: uppercase
+    color: $light
   &__form
-    display: flex  
+    display: flex
     flex-wrap: wrap
     justify-content: space-between
-    max-width: 37.42rem
-    margin: auto
-  &__input-group
-    display: flex  
+    margin: 0 auto
+    max-width: 37.142rem
+  &__group
+    display: flex
     flex-direction: column
-    flex-basis: 45%
-    margin-bottom: 2rem
-    margin-top: 2rem
-    padding-top: 0.3rem
-    &--question
+    flex-basis: 44.5%
+    &-question
+      margin-top: 3.3rem
       flex-basis: 100%
-  &__policy  
+  &__label
+    padding: 0
+  &__input
+    padding: 0
+    padding-top: 0.05rem
+    padding-bottom: 0.5rem 
+  &__policy
+    margin-left: -11px
+    margin-top: 2.1rem
+    color: $light
     flex-basis: 100%
-    margin-bottom: 2rem
+  &__policy-label
+    font-size: 1.1428rem
+    justify-content: center
   &__button
-    margin: auto 
-    margin-top: 0.6rem 
-    padding: 1.285rem 4.785rem
+    margin: 0 auto
+    padding: 0.8rem 4.2rem 0.85rem
+    margin-top: 3.6rem
+    font-family: FuturaDemiC, sans-serif
+    font-style: normal
+    font-size: 15px
+    line-height: 26px
+    text-align: center
+    text-transform: uppercase
+  &__adress-and-map
+    margin-top: 49px
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+  &__adress
+    margin: 0 auto
+    max-width: 42.071rem
+  &__adress-text
+    display: block
+    max-width: 550px
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.429rem
+    line-height: 28px
+    text-align: center
+    text-transform: uppercase
+    color: $primary
+    &--phone
+      color: $primary
+      text-decoration: none
+      transition: color 0.2s
+      &:hover
+        color: $light
+  &__icon a
+    margin: 24px 8px 0px
+    margin-left: 3px
+    display: inline-block
+    width: 27px
+    height: 27px
+    border: 2px solid $primary
+    border-radius: 50%
+    background-color: $primary
+    &:hover
+      border: 2px solid transparent
+      background-color: rgba($light, 0.2)
+  &__email
+    background: url('../img/footer-email.svg') no-repeat center
+  &__instagram
+    background: url('../img/footer-instagram.svg') no-repeat center
+  
+  
+
+
   &__menu
     background-color: $dark
-    padding: 4.285rem 0
-  &__map
-    min-height: 465px
-    max-width: 925px
-    margin: auto
-    margin-bottom: 4rem
-    
+    padding: 3.3rem 0rem 3.458rem 0rem
 
-    
+
+
+
+
+.ymap-container 
+  position: relative
+  margin: 41px 0 67px 0
+  max-width: 925px
+  width: 100%
+  overflow: hidden
+  cursor: pointer
+  background: url('../img/yandex-before-load-marker.png') #ffffff no-repeat
+  background-position: center center
+  // background-size: cover
+  box-shadow: 0 0 2em  0 rgba(0,0,0,.2)
+
+ 
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex 
+  position: relative
+  z-index: 7
+  width: 1000px
+  max-width: 100%
+  height: 1000px
+  max-height: 425px
+  cursor: pointer
+  background-color: transparent
+
+
+.loader
+  position: absolute
+  z-index: 15
+  top: -100%
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+ 
+.loader:after, .loader:before
+  box-sizing: border-box
+ 
+.loader.is-active
+  top: 0
+  opacity: 1
+ 
+.loader-default:after 
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+ 
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+ 
+@keyframes blink 
+  from
+    opacity: .5
+  to 
+    opacity: 1

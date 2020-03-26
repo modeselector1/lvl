@@ -1,5 +1,6 @@
 *, *:before, *:after
   box-sizing: border-box
+  outline: none
 html
   font-size: 14px
 body
@@ -7,47 +8,98 @@ body
   font-size: 1rem
 img
   max-width: 100%
-.section 
-  padding: 60px 0
+.header
+  user-select: none
+.section
   &--dark
-    background-color: $dark
     color: $light
   &-title
-    text-align: center
-    &--left
-      text-align: left
-    &--light
-      color: $light
     &__heading
-      text-transform: uppercase
+      text-align: center
       font-family: 'Yeseva One', cursive
-      line-height: 138%
-      &--primary
-        color: $primary
-    &__word
-      display: flex
-      align-items: center
-      &::after
-        content: ''
-        width: 90px
-        height: 2px
-        background-color: $primary
-        margin-left: 2rem
-        border-radius: 1px
-    &__text    
-      font-size: 1.28rem
-      line-height: 2.07rem
-      max-width: 31.57rem
+      text-transform: uppercase
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
     &__image
       display: flex
-      justify-content: center
       align-items: center
-      margin-bottom: 25px
+      justify-content: center
       &::before, &::after
         content: ''
         width: 32px
         height: 2px
         background-color: $primary
-        margin: 0 10px
+        border-radius: 30px
+        margin: 0px 10px
 
-        
+.card
+  margin-bottom: -6rem
+  & img
+    display: block
+    width: 100%
+  &__image
+    max-height: 421px    
+  &__text
+    position: relative
+    margin: 0 auto
+    max-width: 23.571rem
+    bottom: 9.14rem
+    padding: 1.67rem 2.428rem 1.65rem
+    background-color: #fff
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    &--1
+    &--2
+      padding-left: 2.2rem
+    &--3 
+      padding-left: 2.2rem   
+  &__title
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.28rem
+    line-height: 1.78rem
+    margin: 0 0 0.48rem 0
+  &__list
+    margin: -1px 0 2.8rem 0rem
+    padding: 0
+    font-family: FuturaBookC, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1.0715rem
+    line-height: 169.8%
+    color: $secondary
+    list-style-type: none
+  &__item
+    &--dots
+      margin-right: 3px
+  &__price-tag
+    position: absolute
+    left: 0
+    bottom: -1.8rem
+    min-width: 16.285rem
+    font-family: Yeseva One, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 1.785rem
+    text-transform: uppercase
+    background-color: $primary
+    color: $light
+    box-shadow: 5px 5px 10px rgba($primary, 0.3)
+    &--sup
+      font-size: 0.714rem
+
+.page-subtitle
+  display: block
+  margin: 0 auto
+  max-width: 741px 
+  text-align: center
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 1.41rem
+    line-height: 1.928rem
+
+input
+  outline: none

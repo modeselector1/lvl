@@ -2,56 +2,126 @@
   opacity: 0
   visibility: hidden
   display: flex
-  align-items: center
   justify-content: center
+  align-items: center
   position: fixed
   z-index: 199
-  left: 0
   top: 0
-  bottom: 0
+  left: 0
   right: 0
+  bottom: 0
   width: 100%
   height: 100%
-  background-color: rgba($dark, 0.6)
+  background-color: rgba($dark, 0.5)
   &--visible
     opacity: 1
     visibility: visible
   &__dialog
+    overflow: auto
+    max-height: 100%
     position: relative
-    background: $dark url("../img/bg-lines.svg") no-repeat center
-    padding: 2.357rem 3.5rem 1.928rem
+    padding: 2.357rem 3.49rem 1.928rem 3.5rem
+    background: $dark url('../img/modal_bg.svg') no-repeat center / 100%
+    background-size: cover
     color: $light
-    max-width: 36.36rem
-  &__close  
+    max-width: 36.142rem
+  &__close
     position: absolute
-    right: 0
+    margin: 0.785rem 0.857rem 0px 0px
     top: 0
-    width: 28px
-    height: 28px
-    background: transparent url("../img/close.svg") no-repeat center
+    right: 0
+    width: 2rem
+    height: 2rem
+    background: transparent url(../img/close.svg) no-repeat center
     border: none
-    margin: 12px
     cursor: pointer
   &__title
-    font-family: 'Yeseva One', cursive    
+    margin: 0
+    font-family: 'Yeseva One', sans-serif
+    font-style: normal
+    font-weight: normal
     font-size: 1.357rem
+    line-height: 1.857rem
     text-align: center
     margin-bottom: 2.428rem
-    font-weight: normal
-    margin: 0
   &__form
+    display: flex 
+    flex-direction: column
+    margin-top: -0.48rem
+  &__group
     display: flex
     flex-direction: column
-  &__input
-    &-group
-      display: flex
-      flex-direction: column
-      margin-bottom: 3.428rem
+    margin-bottom: 3.428rem
+    &--last
+      margin-bottom: 0rem
+  &__label
+    margin-bottom: -0.2rem
     &:last-of-type
-      margin-bottom: 1rem
+      margin-top: -0.4rem
   &__policy
-    margin-bottom: 2.7rem
+    margin-bottom: 2.768rem
   &__button
     align-self: flex-end
+    padding: 1.25rem 3.2rem 1.25rem 3.2rem
+    border-radius: 0
+  & div.invalid
+    position: absolute
+    margin-top: 46px
   
 
+.ajax-success
+  opacity: 0
+  visibility: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  z-index: 199
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.5)
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__wrap
+    position: relative
+    padding: 4rem 3.49rem 4rem 3.5rem
+    background: $dark url('../img/modal_bg.svg') no-repeat center / 100%
+    background-size: cover
+    color: $light
+    max-width: 36.142rem
+  &__close
+    position: absolute
+    margin: 0.785rem 0.857rem 0px 0px
+    top: 0
+    right: 0
+    width: 2rem
+    height: 2rem
+    background: transparent url(../img/close.svg) no-repeat center
+    border: none
+    cursor: pointer
+  &__title
+    margin-top: 0px
+    font-family: 'Yeseva One', cursive
+    color: $primary
+    text-transform: uppercase
+  &__subtitle
+    display: block
+    font-size: 18px
+  &__link
+    display: flex
+    align-items: center
+    margin-top: 40px
+  &__text
+    display: block
+    font-size: 18px
+  &__vk-link
+    display: block
+    margin-left: 15px
+    width: 40px
+    height: 40px
+    background: url(../img/vk.png) no-repeat center

@@ -1,0 +1,129 @@
+.projects
+  padding: 128px 0px 352px 0px
+  &__row
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+  
+  &__section-title
+    text-align: left
+    display: flex
+    flex-direction: column
+    max-width: 31.57rem
+  &__heading
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 27px
+    line-height: 37px
+    letter-spacing: -0.07em
+    text-transform: uppercase
+    color: $primary
+    margin: 0px
+    margin-top: -3px 
+  &__title-word
+    display: flex
+    align-items: center
+    &::after
+      content: ''
+      margin-left: 34px
+      width: 92px
+      height: 1px
+      background-color: $primary
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 162%
+    max-width: 31.571rem
+    margin-top: 22px 
+    margin-bottom: 0px
+
+  &__content-left
+    max-width: 31.571rem
+  &__content-right
+    max-width: 48.5rem
+
+  &__col
+    display: flex
+    margin-bottom: 64px
+  &__col-left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__col-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 40px
+ 
+  &__swiper-container
+    display: flex
+    margin: 0
+    &--text
+      margin-top: -320px
+      max-width: 442px
+    &--image
+      max-width: 679px
+
+  &__swiper-slide
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 64px
+  
+
+.swiper-text
+  width: 35%
+  margin-right: 35px
+  padding-bottom: 36px
+  &__heading
+    font-family: Yeseva One, cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 138.6%
+    text-transform: uppercase
+    color: $primary
+    margin: 0px 0px 7px 0px
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 1.071rem
+    line-height: 135.8%
+.swiper
+  &-button
+    &-prev
+      margin-left: auto
+      bottom: 0
+      left: 1px
+      top: auto
+      width: 42px
+      height: 14px
+      background: transparent url('../img/arrow-prev.svg') no-repeat center
+      &::after
+        display: none
+    &-next
+      margin-right: auto
+      bottom: 0
+      top: auto
+      width: 42px
+      height: 14px
+      background: transparent url('../img/arrow-next.svg') no-repeat center
+      &::after
+        display: none
+  &-pagination
+    bottom: 0
+    top: auto
+    &-bullet
+      width: 10px
+      height: 10px
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -1px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0px 10px

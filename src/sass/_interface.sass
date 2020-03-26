@@ -1,70 +1,122 @@
 .button
-  padding: 11px 20px
   border: none
-  border-radius: 2px
+  border-radius: 0.14rem
   text-transform: uppercase
-  font-size: 0.93rem
-  font-family: 'Futura Demi', sans-serif
-  &:hover
-    cursor: pointer  
+  cursor: pointer
+  box-shadow: none
+  transition: 0.2s
+  font-family: 'FuturaDemiC', sans-serif
+  line-height: 1.07rem
+  font-size: 13px
   &--primary
-    background-color: $primary
+    background-color: rgba($primary, 1)
+    border: 0.07rem solid $primary
     color: $light
-    box-shadow: 0px 5px 15px rgba($primary, 0.2)
-    border: 1px solid $primary
-    transition: box-shadow 0.3s
+    box-shadow: 0rem 0.35rem 1.07rem rgba($primary, 0.3)
     &:hover
-      box-shadow: none
-      border: 1px solid $light
-      background-color: rgba($light,0.2)
-      box-shadow: 0px 5px 15px rgba($light, 0.2)
+      border: 0.07rem solid $light
+      box-shadow: 0rem 0.35rem 1.07rem  rgba($light, 0.2)
+      background-color: rgba($light, 0.2)
   &--outline
-    border: 1px solid $light
     background-color: transparent
+    border: 0.07rem solid $light
     color: $light
-    min-width: 207px  
     &:hover
-      box-shadow: 0px 5px 15px rgba($light, 0.2)
-      background-color: rgba($light,0.2)
+      box-shadow: 0rem 0.35rem 1.07rem  rgba($light, 0.2)
+      background-color: rgba($light, 0.2)
+
 .label
-  font-size: 1.07rem
   &--light
+    font-style: normal
+    font-weight: normal
+    font-size: 1.071rem
+    line-height: 1.428rem
     color: rgba($light, 0.5)
-.input    
-  border: none
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+
+.input
   background-color: transparent
-  font-size: 1.285rem
+  border: none
+  font-size: 1.30rem
   color: $light
-  padding: 0.5rem 0
-  &--light
-    &::placeholder
-      color: $light
+  padding: 0.5rem 0rem 0.571rem 0rem
+  border-bottom: 1px solid rgba($light, 0.15)
+  &::placeholder
+    opacity: 1
+    color: $light
+
 .policy
-  &__checkbox 
-    opacity: 0  
-    visibility: hidden 
+  &__checkbox
+    opacity: 0
+    visibility: hidden
     &:checked +
       .policy__label
         &::before
-          background: $primary url("../img/check.svg") no-repeat center / 0.8rem
+          background: $primary url('../img/check.svg') no-repeat center / 70%
   &__label
-    font-size: 1.142rem
-    display: flex 
+    display: flex
     align-items: center
+    font-size: 1.142rem
     &::before
       content: ''
-      width: 18px
-      height: 18px
+      width: 1.22rem
+      height: 1.26rem
       border: 1px solid $primary
       border-radius: 1px
+      margin-left: 0.07rem
+      margin-right: 0.615rem
       cursor: pointer
-      margin-right: 0.64rem
-    &--center
-      justify-content: center
-label
-  &.invalid     
-    color: tomato
-input      
-   &.invalid      
-    border-bottom: 1px solid tomato
+
+.button-go-up 
+  display: none
+  z-index: 100
+  position: fixed
+  right: 10px
+  bottom: 10px
+  cursor: pointer
+  font-size: 150%
+  width: 35px
+  height: 35px
+  border: none
+  background-color: transparent
+  animation: 3s linear 1s
+  opacity: 0.5
+  transition: 0.2s
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border: 3px solid $primary
+    border-radius: 50%
+    background: url(../img/arrow-up.svg) no-repeat center / 50%
+  &:hover
+    opacity: 1
+    
+      
+
+
+div
+  &.invalid
+    position: absolute
+    color: rgba(#bf2121, 1)
+    font-family: 'FuturaDemiC', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1.428rem
+
+.control
+  & div.invalid
+    margin-top: 50px
+.footer
+  & div.invalid
+    margin-top: 45px
+.modal
+  & div.invalid
+    margin-top: 40px
+
+input
+  &.invalid
+    border-bottom: 1px solid rgba(#bf2121, 1)
