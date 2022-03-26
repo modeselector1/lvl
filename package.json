@@ -13,7 +13,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-tinypng-compress": "^1.2.5",
     "lodash.template": "^4.5.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
